@@ -1,5 +1,6 @@
 const Experience = [
   {
+    id: 1,
     name: "Tarifica",
     position: "Software Engineer Intern",
     time: "June 2021 - Dec 2021",
@@ -12,6 +13,7 @@ const Experience = [
     tools: "Python, Beautifulsoup, Selenium, Django, Flask, PostgreSQL, MySQL.",
   },
   {
+    id: 2,
     name: "Citizens Financial Group, Inc",
     position: "Software Engineer",
     time: "June 2022 - Present",
