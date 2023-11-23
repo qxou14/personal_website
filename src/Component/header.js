@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, NavItem, NavLink } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 export default function Header() {
   return (
@@ -7,6 +7,9 @@ export default function Header() {
       <Navbar className="bg-body-tertiary">
         <Navbar.Brand>Home</Navbar.Brand>
         <Nav className="me-auto">
+          <Nav.Link eventKey={1} href="#">
+            Education
+          </Nav.Link>
           <Nav.Link eventKey={1} href="#">
             Skills
           </Nav.Link>
