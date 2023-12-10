@@ -1,7 +1,3 @@
-// name,
-//Java, Python, C++, C#,HTML/CSS, PHP,  JavaScript ,
-//Django, React, React Native,  Firebase, Visual Studio Code, GitHub, MySQL,
-//PostgreSQL, JavaFx, IntelliJ IDEA, PyCharm, Android Studio, Code::Blocks
 const skills = [
   {
     name: "Python",
