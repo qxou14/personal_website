@@ -3,6 +3,8 @@ import EducationPage from "./Component/EducationPage";
 import Education from "./Content/EducationContent";
 import ExperiencePage from "./Component/Experience";
 import Experience from "./Content/ExperienceContent";
+import Project from "./Content/ProjectContent";
+import ProjectPage from "./Component/ProjectPage";
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Header />
       <EducationPage content={Education} />
       <ExperiencePage content={Experience} />
+      <ProjectPage content={Project} />
     </div>
   );
 }

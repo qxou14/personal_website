@@ -1,9 +1,10 @@
+import photoshare from "../Assets/project1.gif";
 const Project = [
   {
     id: 1,
     title: "Photoshare",
     link: "",
-    gif: "../Content/project1.gif",
+    gif: photoshare,
     description:
       "Designed a photo sharing application that is simiar to a social media app.",
     features: [
