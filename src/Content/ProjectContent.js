@@ -3,7 +3,7 @@ const Project = [
     id: 1,
     title: "Photoshare",
     link: "",
-    gif: "",
+    gif: "../Content/project1.gif",
     description:
       "Designed a photo sharing application that is simiar to a social media app.",
     features: [
