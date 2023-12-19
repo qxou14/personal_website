@@ -134,3 +134,5 @@ const Project = [
     tool: "Java, Javafx, MySQL",
   },
 ];
+
+export default Project;
