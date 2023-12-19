@@ -38,13 +38,7 @@ const school_page = (education) => {
 };
 
 function EducationPage({ content }) {
-  return (
-    <div>
-      {" "}
-      <p>Hello this is from Education page </p>
-      {content.map((education) => school_page(education))}
-    </div>
-  );
+  return <div>{content.map((education) => school_page(education))}</div>;
 }
 
 export default EducationPage;
