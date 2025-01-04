@@ -13,6 +13,7 @@ function App() {
       <EducationPage content={Education} />
       <ExperiencePage content={Experience} />
       <ProjectPage content={Project} />
+      <Header />
     </div>
   );
 }
