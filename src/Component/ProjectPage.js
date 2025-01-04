@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import example from "../Assets/project1.gif";
 
 function ProjectPage({ content }) {
   return content.map((project) => (
