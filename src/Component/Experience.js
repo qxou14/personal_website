@@ -14,9 +14,14 @@ function ExperiencePage({ content }) {
         </Card.Subtitle>
         <Card.Text>
           Description:{" "}
-          {exp.description.map((des) => (
-            <Card.Text className="mb-2 text-muted">{des}</Card.Text>
-          ))}
+          <ul>
+            {exp.description.map((des) => (
+              <li>
+                {" "}
+                <Card.Text className="mb-2 text-muted">{des}</Card.Text>{" "}
+              </li>
+            ))}
+          </ul>
         </Card.Text>
         <Card.Text>Tools: {exp.tools}</Card.Text>
       </Card.Body>

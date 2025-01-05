@@ -10,8 +10,7 @@ const Experience = [
       "Automate the process of building, testing, and deploying applications by utilizing CI/CD pipeline",
       "Write unit test with good code coverage for applications to make sure the applications run seamlessly. ",
       "Prepare knowledge transfer sessions and documentations for the new hires on the team",
-      "Attend trainning sessions offer by the company to further improve my software engineering skills. The outcome of the training include introduction of Kafka and event driven architecture, \
-      best pratices of building restful api, risks of using opensource packages and work ethics of software engineering.",
+      "Attend trainning sessions offer by the company to further improve my software engineering skills. The outcome of the training include introduction of Kafka and event driven architecture, best pratices of building restful api, risks of using opensource packages and work ethics of software engineering.",
     ],
     tools:
       ".NET, react, Kubernetes, Openshift, Kafka, CICD, Restful Api, Jenkins, Datadog, Jira, Agile",
