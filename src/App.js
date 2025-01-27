@@ -5,6 +5,7 @@ import ExperiencePage from "./Component/Experience";
 import Experience from "./Content/ExperienceContent";
 import Project from "./Content/ProjectContent";
 import ProjectPage from "./Component/ProjectPage";
+import "../src/Style/app.css";
 
 function App() {
   return (
@@ -13,7 +14,6 @@ function App() {
       <EducationPage content={Education} />
       <ExperiencePage content={Experience} />
       <ProjectPage content={Project} />
-      <Header />
     </div>
   );
 }
