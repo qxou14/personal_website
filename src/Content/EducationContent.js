@@ -1,5 +1,6 @@
 const Education = [
   {
+    key: 1,
     name: "The City College of New York",
     major: "Bachelor of Science in Computer Science",
     gpa: "3.72",
@@ -9,11 +10,20 @@ const Education = [
     school: true,
   },
   {
+    key: 2,
     school: false,
     name: "CodePath",
     description: [
-      "Attended 12-week program during the spring semester which involved designing android applications that are similar to Flixster, Twitter and Instagram.",
-      "Attended 12-week program during summer to prepare, review and solve challenging algorithms problems.",
+      {
+        key: "1",
+        content:
+          "Attended 12-week program during the spring semester which involved designing android applications that are similar to Flixster, Twitter and Instagram.",
+      },
+      {
+        key: "2",
+        content:
+          "Attended 12-week program during summer to prepare, review and solve challenging algorithms problems.",
+      },
     ],
   },
 ];

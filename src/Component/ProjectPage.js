@@ -3,13 +3,13 @@ import { Card, Carousel } from "react-bootstrap";
 
 function ProjectPage({ content }) {
   return content.map((project) => (
-    <Card>
+    <Card key={project.id}>
       <Card.Body>
         <Card.Title>{project.title}</Card.Title>
         <Carousel controls={project.gif.length > 1 ? true : false}>
-          {project.gif.map((gif) => {
+          {project.gif.map((gif, index) => {
             return (
-              <Carousel.Item>
+              <Carousel.Item key={index}>
                 <Card.Img variant="top" src={gif}></Card.Img>
               </Carousel.Item>
             );
@@ -18,14 +18,14 @@ function ProjectPage({ content }) {
         <Card.Subtitle className="mb-2 text-muted">
           {project.description}
         </Card.Subtitle>
-        <Card.Text>
+        <div>
           Features:
           <ul>
-            {project.features.map((feature) => (
-              <li>{feature}</li>
+            {project.features.map((feature, index) => (
+              <li key={index}>{feature}</li>
             ))}
           </ul>
-        </Card.Text>
+        </div>
         <Card.Text>Tools: {project.tool}</Card.Text>
       </Card.Body>
     </Card>

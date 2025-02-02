@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 function ExperiencePage({ content }) {
   return content.map((exp) => (
-    <Card>
+    <Card key={exp.id}>
       <Card.Body>
         <Card.Title>{exp.name}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
@@ -12,17 +12,19 @@ function ExperiencePage({ content }) {
         <Card.Subtitle className="mb-2 text-muted">
           Time Period : {exp.time}
         </Card.Subtitle>
-        <Card.Text>
+        <div>
           Description:{" "}
           <ul>
             {exp.description.map((des) => (
-              <li>
+              <li key={des.key}>
                 {" "}
-                <Card.Text className="mb-2 text-muted">{des}</Card.Text>{" "}
+                <Card.Text className="mb-2 text-muted">
+                  {des.content}
+                </Card.Text>{" "}
               </li>
             ))}
           </ul>
-        </Card.Text>
+        </div>
         <Card.Text>Tools: {exp.tools}</Card.Text>
       </Card.Body>
     </Card>

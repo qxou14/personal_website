@@ -151,7 +151,7 @@ const Project = [
     tool: "PHP.HTML/CSS,MySQL",
   },
   {
-    id: 20,
+    id: 10,
     title: "Database Pie chart",
     link: "",
     gif: [piechart],
