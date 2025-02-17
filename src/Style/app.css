@@ -33,3 +33,32 @@
   max-height: 300px;
   object-fit: contain;
 }
+
+/* .education-content {
+  background-color: yellow;
+} */
+
+.education-card {
+  min-height: 210px;
+  box-shadow: 2px 2px 8px 2px gray;
+}
+
+.header {
+  padding-left: 16px;
+  background-color: black;
+}
+
+.content {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.education-page {
+  margin-bottom: 30px;
+}
+
+.custom-nav-link {
+  color: white !important;
+}

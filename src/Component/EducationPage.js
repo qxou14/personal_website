@@ -1,42 +1,49 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 
-const school_page = (education) => {
-  return education.school ? (
-    <Card key={education.key}>
-      <Card.Body>
-        <Card.Title>{education.name}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">
-          Major : {education.major}
-        </Card.Subtitle>
-        <Card.Subtitle className="mb-2 text-muted">
-          GPA: {education.gpa}
-        </Card.Subtitle>
-        <Card.Subtitle className="mb-2 text-muted">
-          Year: {education.year}
-        </Card.Subtitle>
-        <Card.Text>Relevant course : {education.relevant_course}</Card.Text>
-      </Card.Body>
-    </Card>
-  ) : (
-    <Card key={education.key}>
-      <Card.Body>
-        <Card.Title>{education.name}</Card.Title>
-        <div>
-          Description:{" "}
-          {education.description.map((des) => (
-            <Card.Text className="mb-2 text-muted" key={des.key}>
-              {des.content}
-            </Card.Text>
-          ))}
-        </div>
-      </Card.Body>
-    </Card>
+function EducationPage({ education, extra }) {
+  return (
+    <div className="education-page">
+      <b>Education</b>
+      <Row>
+        <Col className="education-content">
+          <Card key={education.key} className="education-card">
+            <Card.Body>
+              <Card.Title>{education.name}</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                Major : {education.major}
+              </Card.Subtitle>
+              <Card.Subtitle className="mb-2 text-muted">
+                GPA: {education.gpa}
+              </Card.Subtitle>
+              <Card.Subtitle className="mb-2 text-muted">
+                Year: {education.year}
+              </Card.Subtitle>
+              <Card.Text>
+                Relevant course : {education.relevant_course}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col className="education-content">
+          <Card key={extra.key} className="education-card">
+            <Card.Body>
+              <Card.Title>{extra.name}</Card.Title>
+              <div>
+                Description:{" "}
+                {extra.description.map((des) => (
+                  <Card.Text className="mb-2 text-muted" key={des.key}>
+                    {des.content}
+                  </Card.Text>
+                ))}
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </div>
   );
-};
-
-function EducationPage({ content }) {
-  return <div>{content.map((education) => school_page(education))}</div>;
 }
 
 export default EducationPage;
