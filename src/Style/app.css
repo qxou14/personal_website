@@ -7,25 +7,28 @@
 }
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 20px;
-  justify-content: space-evenly;
 }
 
 .project {
   height: auto;
-  max-width: 40%;
-  border: solid 1px black;
   margin-bottom: 12px;
-  box-shadow: 10px 10px 10px 10px gray;
+  box-shadow: 2px 2px 8px 2px gray;
+  display: flex;
 }
 
 .carousel-temp {
   padding-left: 25%;
 }
 
-.card {
+.exp-content {
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 8px 2px gray;
+}
+
+.exp-content:hover {
+  transform: scale(1.01);
 }
 
 .gif-container {
@@ -34,9 +37,13 @@
   object-fit: contain;
 }
 
-/* .education-content {
-  background-color: yellow;
-} */
+.education-content {
+  transition: transform 0.3s ease;
+}
+
+.education-content:hover {
+  transform: scale(1.03);
+}
 
 .education-card {
   min-height: 210px;
@@ -49,8 +56,8 @@
 }
 
 .content {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 32px;
   padding-bottom: 64px;
 }

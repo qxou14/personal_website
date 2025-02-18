@@ -11,13 +11,24 @@ import insClone2 from "../Assets/instagramClone2.gif";
 import todo from "../Assets/Todo.gif";
 import piechart from "../Assets/piechart.png";
 import online from "../Assets/onlineRestaurant.png";
+//images
+import photoshareImage from "../Assets/image/project1.png";
+import photoshareApiImage from "../Assets/image/project2.png";
+import movieFlicksImage from "../Assets/image/project3.png";
+import iAuctionsApiImage from "../Assets/image/project4.png";
+import flixImage from "../Assets/image/flixster.png";
+import tweetImage from "../Assets/image/tweet.png";
+import insCloneImage from "../Assets/image/instagramClone.png";
+import todoImage from "../Assets/image/todo.png";
 
 const Project = [
   {
     id: 1,
     title: "Photoshare",
+    label: "PhotoShare",
     link: "",
     gif: [photoshare],
+    image: photoshareImage,
     description:
       "Designed a photo sharing application that is simiar to a social media app.",
     features: [
@@ -32,8 +43,10 @@ const Project = [
   {
     id: 2,
     title: "PhotoShare-API",
+    label: "PhotoShareAPI",
     link: "",
     gif: [photoshareApi],
+    image: photoshareApiImage,
     description: "Built an api for a photo sharing application.",
     features: [
       "Users can retrieve a list of information such as profiles and posts by sending a GET request.",
@@ -47,8 +60,10 @@ const Project = [
   {
     id: 3,
     title: "Movie Flicks",
+    label: "Flicks",
     link: "",
     gif: [movieFlicks],
+    image: movieFlicksImage,
     description: "Designed a FLICKS by using The Movie Database API",
     features: [
       "Users can see the latest 10 upcoming movies.",
@@ -62,8 +77,10 @@ const Project = [
   {
     id: 4,
     title: "iAuctions-API",
+    label: "IAuctionsAPI",
     link: "",
     gif: [iAuctionsApi],
+    image: iAuctionsApiImage,
     description:
       "Built a RESTful api that acts like an eBay-like e-commerce auction site.",
     features: [
@@ -78,8 +95,10 @@ const Project = [
   {
     id: 5,
     title: "Android: Flix",
+    label: "Flix",
     link: "",
     gif: [flix1, flix2],
+    image: flixImage,
     description:
       "An android app that allows users to view movies from the The Movie Database API.",
     features: [
@@ -92,8 +111,10 @@ const Project = [
   {
     id: 6,
     title: "Android: SimpleTweet",
+    label: "Tweet",
     link: "",
     gif: [tweet1, tweet2],
+    image: tweetImage,
     description:
       "An android app that allows users to view Twitter timeline and post a new tweet by utilizing Twitter REST API.",
     features: [
@@ -108,8 +129,10 @@ const Project = [
   {
     id: 7,
     title: "Android: InstagramClone",
+    label: "InsClone",
     link: "",
     gif: [insClone1, insClone2],
+    image: insCloneImage,
     description: "Built an android app that is similar to instagram.",
     features: [
       "Users can sign up and log in to their account and log out from their account.",
@@ -123,8 +146,10 @@ const Project = [
   {
     id: 8,
     title: "Android: ToDo List",
+    label: "Todo",
     link: "",
     gif: [todo],
+    image: todoImage,
     description: "Implemented a Todo List.",
     features: [
       "Users can view a list of todo items.",
@@ -136,8 +161,10 @@ const Project = [
   {
     id: 9,
     title: "Online Restaurant",
+    label: "Online",
     link: "",
     gif: [online],
+    image: online,
     description:
       "Worked with a group of teammates to design and implement an online restaurant system.",
     features: [
@@ -153,8 +180,10 @@ const Project = [
   {
     id: 10,
     title: "Database Pie chart",
+    label: "Piechart",
     link: "",
     gif: [piechart],
+    image: piechart,
     description: "Used Javafx and MySQL to display a piechart.",
     features: [
       "Enhanced understanding of class inheritance, Javafx and how to interact with MySQL server.",
