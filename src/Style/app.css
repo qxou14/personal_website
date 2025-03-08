@@ -8,13 +8,15 @@
 
 .project-list {
   margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
 }
 
 .project {
-  height: auto;
   margin-bottom: 12px;
   box-shadow: 2px 2px 8px 2px gray;
-  display: flex;
 }
 
 .carousel-temp {
@@ -31,10 +33,14 @@
   transform: scale(1.01);
 }
 
+.card-item {
+}
+
 .gif-container {
-  max-width: 300px;
-  max-height: 300px;
-  object-fit: contain;
+  min-width: auto;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: left top;
 }
 
 .education-content {
@@ -56,8 +62,8 @@
 }
 
 .content {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 32px;
   padding-bottom: 64px;
 }

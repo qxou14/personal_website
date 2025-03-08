@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Carousel, Row, Col } from "react-bootstrap";
+import { Card, Carousel, Row, Col, Button } from "react-bootstrap";
 
 function ProjectPage({ content }) {
   const [imageHoverState, setImageHoverState] = useState({
@@ -24,42 +24,44 @@ function ProjectPage({ content }) {
   return (
     <div className="project-list">
       {content.map((project) => (
-        <Row>
-          <Col className="project" key={project.id}>
-            <div>
-              <div>{project.title}</div>
-
-              <div>{project.description}</div>
-              <div>
-                Features:
-                <ul>
-                  {project.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>Tools: {project.tool}</div>
-            </div>
-
-            <div>
-              <Carousel controls={false} indicators={false}>
-                <Carousel.Item className="">
-                  <Card.Img
-                    variant="top"
-                    src={
-                      imageHoverState[project.label]
-                        ? project.gif[0]
-                        : project.image
-                    }
-                    className="gif-container"
-                    onMouseEnter={() => handleHoverState(project.label, true)}
-                    onMouseLeave={() => handleHoverState(project.label, false)}
-                  />
-                </Carousel.Item>
-              </Carousel>
-            </div>
+        <Card className="project" key={project.id}>
+          <Col>
+            <Carousel controls={false} indicators={false} className="card-item">
+              <Carousel.Item>
+                <Card.Img
+                  variant="top"
+                  src={
+                    imageHoverState[project.label]
+                      ? project.gif[0]
+                      : project.image
+                  }
+                  className="gif-container"
+                  onMouseEnter={() => handleHoverState(project.label, true)}
+                  onMouseLeave={() => handleHoverState(project.label, false)}
+                />
+              </Carousel.Item>
+            </Carousel>
           </Col>
-        </Row>
+          <Card.Body>
+            <Card.Title>Project Title</Card.Title>
+            <Card.Text>Project Descriptions</Card.Text>
+            <Button variant="primary">Show More</Button>
+          </Card.Body>
+          {/* <div>
+                <div>{project.title}</div>
+
+                <div>{project.description}</div>
+                <div>
+                  Features:
+                  <ul>
+                    {project.features.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>Tools: {project.tool}</div>
+              </div> */}
+        </Card>
       ))}
     </div>
   );
