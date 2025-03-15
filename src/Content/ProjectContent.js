@@ -30,7 +30,7 @@ const Project = [
     gif: [photoshare],
     image: photoshareImage,
     description:
-      "Designed a photo sharing application that is simiar to a social media app.",
+      "A photo sharing application that is simiar to a social media app.",
     features: [
       "Users can sign up for an account , log in to their account and log out from their account.",
       "Users have a profile page that shows their username, bio, and profile photo. And they can edit it whenever they want.",
@@ -47,7 +47,7 @@ const Project = [
     link: "",
     gif: [photoshareApi],
     image: photoshareApiImage,
-    description: "Built an api for a photo sharing application.",
+    description: "a RESTfulApi for a photo sharing application.",
     features: [
       "Users can retrieve a list of information such as profiles and posts by sending a GET request.",
       "Users can add a new post by sending a POST request.",
@@ -64,7 +64,8 @@ const Project = [
     link: "",
     gif: [movieFlicks],
     image: movieFlicksImage,
-    description: "Designed a FLICKS by using The Movie Database API",
+    description:
+      "A movie app built with React that displays details of movies based on the movie database API.",
     features: [
       "Users can see the latest 10 upcoming movies.",
       "Users can see the latest 10 trending movies.",
@@ -82,7 +83,7 @@ const Project = [
     gif: [iAuctionsApi],
     image: iAuctionsApiImage,
     description:
-      "Built a RESTful api that acts like an eBay-like e-commerce auction site.",
+      "A RESTful api to an eBay-like e-commerce auction site that will allow users to post auction listings, categorize listings, place bids on listings and comment on those listings.",
     features: [
       "Users can get a list of information such as users,categories and listings by using GET request.",
       "Users can create a new user/category by using the POST request.",
@@ -100,7 +101,7 @@ const Project = [
     gif: [flix1, flix2],
     image: flixImage,
     description:
-      "An android app that allows users to view movies from the The Movie Database API.",
+      "An Android app that allows users to view movies from the The Movie Database API.",
     features: [
       "Users can view a list of movies from The Movide Database API.",
       "Users can view a movie's details by clicking on it.",
@@ -116,7 +117,7 @@ const Project = [
     gif: [tweet1, tweet2],
     image: tweetImage,
     description:
-      "An android app that allows users to view Twitter timeline and post a new tweet by utilizing Twitter REST API.",
+      "An Android app that allows users to view Twitter timeline and post a new tweet by utilizing Twitter REST API.",
     features: [
       "Users can enter a new tweet and post this to twitter",
       "Users can see a counter with total number of characters left to tweet while composing their tweets",
@@ -133,7 +134,7 @@ const Project = [
     link: "",
     gif: [insClone1, insClone2],
     image: insCloneImage,
-    description: "Built an android app that is similar to instagram.",
+    description: "An Android app that is similar to instagram.",
     features: [
       "Users can sign up and log in to their account and log out from their account.",
       "Users can take a photo, write a description and post it.",
@@ -150,7 +151,7 @@ const Project = [
     link: "",
     gif: [todo],
     image: todoImage,
-    description: "Implemented a Todo List.",
+    description: "a Todo List for Android.",
     features: [
       "Users can view a list of todo items.",
       "Users can add or remove a todo item.",
@@ -166,7 +167,7 @@ const Project = [
     gif: [online],
     image: online,
     description:
-      "Worked with a group of teammates to design and implement an online restaurant system.",
+      "An online restaurant system that is capable of making transactions such as ordering, rating and viewing.",
     features: [
       "Users can sign up for an account,log in to their account and log out from their account.",
       "Users can view different dishes on the main page.",
@@ -184,7 +185,7 @@ const Project = [
     link: "",
     gif: [piechart],
     image: piechart,
-    description: "Used Javafx and MySQL to display a piechart.",
+    description: "A piechart built with Javafx and MySQL database.",
     features: [
       "Enhanced understanding of class inheritance, Javafx and how to interact with MySQL server.",
     ],

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Card, Carousel, Row, Col, Button } from "react-bootstrap";
+import CustomModal from "./CustomModal";
 
 function ProjectPage({ content }) {
   const [imageHoverState, setImageHoverState] = useState({
@@ -14,6 +15,8 @@ function ProjectPage({ content }) {
     Online: false,
     Piechart: false,
   });
+
+  const [showModal, setShowModal] = useState(false);
 
   function handleHoverState(label, onHover) {
     setImageHoverState((prev) => ({
@@ -43,9 +46,11 @@ function ProjectPage({ content }) {
             </Carousel>
           </Col>
           <Card.Body>
-            <Card.Title>Project Title</Card.Title>
-            <Card.Text>Project Descriptions</Card.Text>
-            <Button variant="primary">Show More</Button>
+            <Card.Title>{project.title}</Card.Title>
+            <Card.Text>{project.description}</Card.Text>
+            <Button variant="primary" onClick={() => setShowModal(true)}>
+              Show More
+            </Button>
           </Card.Body>
           {/* <div>
                 <div>{project.title}</div>
@@ -63,6 +68,11 @@ function ProjectPage({ content }) {
               </div> */}
         </Card>
       ))}
+      <CustomModal
+        showModal={showModal}
+        closeModal={() => setShowModal(false)}
+        title={"Hello world"}
+      />
     </div>
   );
 }
