@@ -17,6 +17,7 @@ function ProjectPage({ content }) {
   });
 
   const [showModal, setShowModal] = useState(false);
+  const [projectData, setProjectData] = useState(undefined);
 
   function handleHoverState(label, onHover) {
     setImageHoverState((prev) => ({
@@ -28,8 +29,8 @@ function ProjectPage({ content }) {
     <div className="project-list">
       {content.map((project) => (
         <Card className="project" key={project.id}>
-          <Col>
-            <Carousel controls={false} indicators={false} className="card-item">
+          <Col className="card-item">
+            <Carousel controls={false} indicators={false}>
               <Carousel.Item>
                 <Card.Img
                   variant="top"
@@ -38,17 +39,26 @@ function ProjectPage({ content }) {
                       ? project.gif[0]
                       : project.image
                   }
-                  className="gif-container"
+                  className={
+                    project.isMobile ? "gif-container-mobile" : "gif-container"
+                  }
                   onMouseEnter={() => handleHoverState(project.label, true)}
                   onMouseLeave={() => handleHoverState(project.label, false)}
                 />
               </Carousel.Item>
             </Carousel>
           </Col>
+
           <Card.Body>
             <Card.Title>{project.title}</Card.Title>
             <Card.Text>{project.description}</Card.Text>
-            <Button variant="primary" onClick={() => setShowModal(true)}>
+            <Button
+              variant="primary"
+              onClick={() => {
+                setShowModal(true);
+                setProjectData(project);
+              }}
+            >
               Show More
             </Button>
           </Card.Body>
@@ -71,7 +81,7 @@ function ProjectPage({ content }) {
       <CustomModal
         showModal={showModal}
         closeModal={() => setShowModal(false)}
-        title={"Hello world"}
+        project={projectData}
       />
     </div>
   );

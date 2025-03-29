@@ -34,13 +34,23 @@
 }
 
 .card-item {
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
 }
 
 .gif-container {
   min-width: auto;
-  min-height: 300px;
   object-fit: cover;
+  max-height: 30em;
   object-position: left top;
+}
+
+.gif-container-mobile {
+  max-height: 30em;
+  object-fit: fill;
 }
 
 .education-content {

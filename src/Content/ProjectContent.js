@@ -24,6 +24,7 @@ import todoImage from "../Assets/image/todo.png";
 const Project = [
   {
     id: 1,
+    isMobile: false,
     title: "Photoshare",
     label: "PhotoShare",
     link: "",
@@ -42,6 +43,7 @@ const Project = [
 
   {
     id: 2,
+    isMobile: false,
     title: "PhotoShare-API",
     label: "PhotoShareAPI",
     link: "",
@@ -59,6 +61,7 @@ const Project = [
 
   {
     id: 3,
+    isMobile: false,
     title: "Movie Flicks",
     label: "Flicks",
     link: "",
@@ -77,6 +80,7 @@ const Project = [
 
   {
     id: 4,
+    isMobile: false,
     title: "iAuctions-API",
     label: "IAuctionsAPI",
     link: "",
@@ -95,6 +99,7 @@ const Project = [
 
   {
     id: 5,
+    isMobile: true,
     title: "Android: Flix",
     label: "Flix",
     link: "",
@@ -111,6 +116,7 @@ const Project = [
   },
   {
     id: 6,
+    isMobile: true,
     title: "Android: SimpleTweet",
     label: "Tweet",
     link: "",
@@ -129,6 +135,7 @@ const Project = [
 
   {
     id: 7,
+    isMobile: true,
     title: "Android: InstagramClone",
     label: "InsClone",
     link: "",
@@ -146,6 +153,7 @@ const Project = [
 
   {
     id: 8,
+    isMobile: true,
     title: "Android: ToDo List",
     label: "Todo",
     link: "",
@@ -161,6 +169,7 @@ const Project = [
   },
   {
     id: 9,
+    isMobile: false,
     title: "Online Restaurant",
     label: "Online",
     link: "",
@@ -180,6 +189,7 @@ const Project = [
   },
   {
     id: 10,
+    isMobile: false,
     title: "Database Pie chart",
     label: "Piechart",
     link: "",
