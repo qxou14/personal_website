@@ -50,7 +50,18 @@
 
 .gif-container-mobile {
   max-height: 30em;
-  object-fit: fill;
+  object-fit: contain;
+}
+
+.modal-gif {
+  object-fit: contain;
+  width: 100%;
+  max-height: 30em;
+}
+
+.modal-gif-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .education-content {
@@ -84,4 +95,9 @@
 
 .custom-nav-link {
   color: white !important;
+}
+
+.modal-list {
+  list-style: none;
+  padding-left: 0;
 }

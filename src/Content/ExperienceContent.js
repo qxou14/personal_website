@@ -37,7 +37,7 @@ const Experience = [
       },
     ],
     tools:
-      ".NET, react, Kubernetes, Openshift, Kafka, CICD, Restful Api, Jenkins, Datadog, Jira, Agile",
+      "Java, .NET, React, Javascript, Typescript, Kubernetes, Openshift, Kafka, CICD, Restful Api, Jenkins, Datadog, Jira, Agile",
   },
   {
     id: 2,

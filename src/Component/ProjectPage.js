@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Carousel, Row, Col, Button } from "react-bootstrap";
+import { Card, Col, Button } from "react-bootstrap";
 import CustomModal from "./CustomModal";
 
 function ProjectPage({ content }) {
@@ -30,23 +30,17 @@ function ProjectPage({ content }) {
       {content.map((project) => (
         <Card className="project" key={project.id}>
           <Col className="card-item">
-            <Carousel controls={false} indicators={false}>
-              <Carousel.Item>
-                <Card.Img
-                  variant="top"
-                  src={
-                    imageHoverState[project.label]
-                      ? project.gif[0]
-                      : project.image
-                  }
-                  className={
-                    project.isMobile ? "gif-container-mobile" : "gif-container"
-                  }
-                  onMouseEnter={() => handleHoverState(project.label, true)}
-                  onMouseLeave={() => handleHoverState(project.label, false)}
-                />
-              </Carousel.Item>
-            </Carousel>
+            <Card.Img
+              variant="top"
+              src={
+                imageHoverState[project.label] ? project.gif[0] : project.image
+              }
+              className={
+                project.isMobile ? "gif-container-mobile" : "gif-container"
+              }
+              onMouseEnter={() => handleHoverState(project.label, true)}
+              onMouseLeave={() => handleHoverState(project.label, false)}
+            />
           </Col>
 
           <Card.Body>
@@ -62,20 +56,6 @@ function ProjectPage({ content }) {
               Show More
             </Button>
           </Card.Body>
-          {/* <div>
-                <div>{project.title}</div>
-
-                <div>{project.description}</div>
-                <div>
-                  Features:
-                  <ul>
-                    {project.features.map((feature, index) => (
-                      <li key={index}>{feature}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div>Tools: {project.tool}</div>
-              </div> */}
         </Card>
       ))}
       <CustomModal
@@ -88,30 +68,3 @@ function ProjectPage({ content }) {
 }
 
 export default ProjectPage;
-
-{
-  /* <div>
-<Carousel
-  controls={project.gif.length > 1 ? true : false}
-  indicators={false}
->
-  {project.gif.map((gif, index) => {
-    return (
-      <Carousel.Item key={index} className="">
-        <Card.Img
-          variant="top"
-          src={gif}
-          className="gif-container"
-          onMouseEnter={() =>
-            handleHoverState(project.label, true)
-          }
-          onMouseLeave={() =>
-            handleHoverState(project.label, false)
-          }
-        />
-      </Carousel.Item>
-    );
-  })}
-</Carousel>
-</div> */
-}
