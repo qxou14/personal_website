@@ -151,22 +151,22 @@ const Project = [
     tool: "Java, Glide, Android Async HTTP, Android Studio",
   },
 
-  {
-    id: 8,
-    isMobile: true,
-    title: "Android: ToDo List",
-    label: "Todo",
-    link: "",
-    gif: [todo],
-    image: todoImage,
-    description: "a Todo List for Android.",
-    features: [
-      "Users can view a list of todo items.",
-      "Users can add or remove a todo item.",
-      "Users can edit a todo item.",
-    ],
-    tool: "Java, Android Studio",
-  },
+  // {
+  //   id: 8,
+  //   isMobile: true,
+  //   title: "Android: ToDo List",
+  //   label: "Todo",
+  //   link: "",
+  //   gif: [todo],
+  //   image: todoImage,
+  //   description: "a Todo List for Android.",
+  //   features: [
+  //     "Users can view a list of todo items.",
+  //     "Users can add or remove a todo item.",
+  //     "Users can edit a todo item.",
+  //   ],
+  //   tool: "Java, Android Studio",
+  // },
   {
     id: 9,
     isMobile: false,
@@ -187,20 +187,20 @@ const Project = [
     ],
     tool: "PHP.HTML/CSS,MySQL",
   },
-  {
-    id: 10,
-    isMobile: false,
-    title: "Database Pie chart",
-    label: "Piechart",
-    link: "",
-    gif: [piechart],
-    image: piechart,
-    description: "A piechart built with Javafx and MySQL database.",
-    features: [
-      "Enhanced understanding of class inheritance, Javafx and how to interact with MySQL server.",
-    ],
-    tool: "Java, Javafx, MySQL",
-  },
+  // {
+  //   id: 10,
+  //   isMobile: false,
+  //   title: "Database Pie chart",
+  //   label: "Piechart",
+  //   link: "",
+  //   gif: [piechart],
+  //   image: piechart,
+  //   description: "A piechart built with Javafx and MySQL database.",
+  //   features: [
+  //     "Enhanced understanding of class inheritance, Javafx and how to interact with MySQL server.",
+  //   ],
+  //   tool: "Java, Javafx, MySQL",
+  // },
 ];
 
 export default Project;

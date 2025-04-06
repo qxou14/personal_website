@@ -26,44 +26,49 @@ function ProjectPage({ content }) {
     }));
   }
   return (
-    <div className="project-list">
-      {content.map((project) => (
-        <Card className="project" key={project.id}>
-          <Col className="card-item">
-            <Card.Img
-              variant="top"
-              src={
-                imageHoverState[project.label] ? project.gif[0] : project.image
-              }
-              className={
-                project.isMobile ? "gif-container-mobile" : "gif-container"
-              }
-              onMouseEnter={() => handleHoverState(project.label, true)}
-              onMouseLeave={() => handleHoverState(project.label, false)}
-            />
-          </Col>
+    <>
+      <b>Project</b>
+      <div className="project-list">
+        {content.map((project) => (
+          <Card className="project" key={project.id}>
+            <Col className="card-item">
+              <Card.Img
+                variant="top"
+                src={
+                  imageHoverState[project.label]
+                    ? project.gif[0]
+                    : project.image
+                }
+                className={
+                  project.isMobile ? "gif-container-mobile" : "gif-container"
+                }
+                onMouseEnter={() => handleHoverState(project.label, true)}
+                onMouseLeave={() => handleHoverState(project.label, false)}
+              />
+            </Col>
 
-          <Card.Body>
-            <Card.Title>{project.title}</Card.Title>
-            <Card.Text>{project.description}</Card.Text>
-            <Button
-              variant="primary"
-              onClick={() => {
-                setShowModal(true);
-                setProjectData(project);
-              }}
-            >
-              Show More
-            </Button>
-          </Card.Body>
-        </Card>
-      ))}
-      <CustomModal
-        showModal={showModal}
-        closeModal={() => setShowModal(false)}
-        project={projectData}
-      />
-    </div>
+            <Card.Body>
+              <Card.Title>{project.title}</Card.Title>
+              <Card.Text>{project.description}</Card.Text>
+              <Button
+                variant="primary"
+                onClick={() => {
+                  setShowModal(true);
+                  setProjectData(project);
+                }}
+              >
+                Show More
+              </Button>
+            </Card.Body>
+          </Card>
+        ))}
+        <CustomModal
+          showModal={showModal}
+          closeModal={() => setShowModal(false)}
+          project={projectData}
+        />
+      </div>
+    </>
   );
 }
 
