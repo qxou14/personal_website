@@ -80,12 +80,16 @@
 .header {
   padding-left: 16px;
   background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
 }
 
 .content {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 32px;
+  padding-top: 60px;
   padding-bottom: 64px;
 }
 
@@ -125,4 +129,5 @@
 .section-header-name {
   display: flex;
   justify-content: center;
+  scroll-margin-top: 60px;
 }
