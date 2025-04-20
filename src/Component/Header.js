@@ -10,7 +10,7 @@ export default function Header() {
     <div className="header">
       <Navbar>
         <Navbar.Brand className="custom-nav-link">Home</Navbar.Brand>
-        <Nav className="me-auto">
+        <Nav className="header-label">
           <Nav.Link
             eventKey={1}
             onClick={() => clickHeader("education")}

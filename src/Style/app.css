@@ -66,6 +66,7 @@
 
 .education-content {
   transition: transform 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .education-content:hover {
@@ -73,7 +74,6 @@
 }
 
 .education-card {
-  min-height: 210px;
   box-shadow: 2px 2px 8px 2px gray;
 }
 
@@ -84,6 +84,14 @@
   width: 100%;
   z-index: 1000;
   height: 60px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.header-label {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .content {
