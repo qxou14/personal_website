@@ -6,6 +6,7 @@ import Experience from "./Content/ExperienceContent";
 import Project from "./Content/ProjectContent";
 import ProjectPage from "./Component/ProjectPage";
 import SkillPage from "./Component/Skills";
+import ContactPage from "./Component/ContactMe";
 import "../src/Style/app.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <SkillPage />
         <ExperiencePage content={Experience} />
         <ProjectPage content={Project} />
+        <ContactPage />
       </div>
     </div>
   );

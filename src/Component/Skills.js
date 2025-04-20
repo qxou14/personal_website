@@ -8,6 +8,12 @@ const skills = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Jenkins",
+  "CI/CD",
+  "Agile",
+  "Kubernetes",
+  "Openshift",
+  "Datadog",
   "Node.js",
   "HTML",
   "CSS",
@@ -20,7 +26,9 @@ const skills = [
 function SkillPage() {
   return (
     <>
-      <b>Skills</b>
+      <h1 className="section-header-name" id="skills">
+        Skills
+      </h1>
       <div className="skillpage-container">
         {skills.map((skill, index) => (
           <span key={index} className="skill">

@@ -27,7 +27,9 @@ function ProjectPage({ content }) {
   }
   return (
     <>
-      <b>Project</b>
+      <h1 id="project" className="section-header-name">
+        Project
+      </h1>
       <div className="project-list">
         {content.map((project) => (
           <Card className="project" key={project.id}>

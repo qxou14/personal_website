@@ -121,3 +121,8 @@
   font-size: 12px;
   white-space: nowrap;
 }
+
+.section-header-name {
+  display: flex;
+  justify-content: center;
+}

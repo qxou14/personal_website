@@ -4,7 +4,9 @@ import { Card } from "react-bootstrap";
 function ExperiencePage({ content }) {
   return (
     <div className="exp-page">
-      <b>Work Experience</b>
+      <h1 id="experience" className="section-header-name">
+        Work Experience
+      </h1>
       {content.map((exp) => (
         <Card key={exp.id} className="exp-content">
           <Card.Body>

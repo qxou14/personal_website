@@ -4,7 +4,9 @@ import { Card, Row, Col } from "react-bootstrap";
 function EducationPage({ education, extra }) {
   return (
     <div className="education-page">
-      <b>Education</b>
+      <h1 id="education" className="section-header-name">
+        Education
+      </h1>
       <Row>
         <Col className="education-content">
           <Card key={education.key} className="education-card">
