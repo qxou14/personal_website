@@ -139,3 +139,25 @@
   justify-content: center;
   scroll-margin-top: 60px;
 }
+
+.icon a {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  font-size: 5vh;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.icon a:hover {
+  transform: scale(1.5);
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+}

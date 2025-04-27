@@ -8,8 +8,8 @@ import tweet1 from "../Assets/tweet1.gif";
 import tweet2 from "../Assets/tweet2.gif";
 import insClone1 from "../Assets/instagramClone1.gif";
 import insClone2 from "../Assets/instagramClone2.gif";
-import todo from "../Assets/Todo.gif";
-import piechart from "../Assets/piechart.png";
+// import todo from "../Assets/Todo.gif";
+// import piechart from "../Assets/piechart.png";
 import online from "../Assets/onlineRestaurant.png";
 //images
 import photoshareImage from "../Assets/image/project1.png";
@@ -19,7 +19,7 @@ import iAuctionsApiImage from "../Assets/image/project4.png";
 import flixImage from "../Assets/image/flixster.png";
 import tweetImage from "../Assets/image/tweet.png";
 import insCloneImage from "../Assets/image/instagramClone.png";
-import todoImage from "../Assets/image/todo.png";
+// import todoImage from "../Assets/image/todo.png";
 
 const Project = [
   {
