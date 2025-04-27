@@ -11,6 +11,7 @@ import insClone2 from "../Assets/instagramClone2.gif";
 // import todo from "../Assets/Todo.gif";
 // import piechart from "../Assets/piechart.png";
 import online from "../Assets/onlineRestaurant.png";
+
 //images
 import photoshareImage from "../Assets/image/project1.png";
 import photoshareApiImage from "../Assets/image/project2.png";
