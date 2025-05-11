@@ -7,6 +7,7 @@ function EducationPage({ education, extra }) {
       <h1 id="education" className="section-header-name">
         Education
       </h1>
+      <hr className="custom-hr-tag" />
       <Row className="education-content">
         <Card key={education.key} className="education-card">
           <Card.Body>

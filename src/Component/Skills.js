@@ -6,6 +6,8 @@ const skills = [
   "Java",
   "C++",
   "C#",
+  "Kafka",
+  ".Net",
   "JavaScript",
   "TypeScript",
   "React",
@@ -18,7 +20,8 @@ const skills = [
   "Node.js",
   "HTML",
   "CSS",
-  "SQL",
+  "MySQL",
+  "PostgreSQL",
   "Django",
   "PHP",
   "React Native",
@@ -30,6 +33,7 @@ function SkillPage() {
       <h1 className="section-header-name" id="skills">
         Skills
       </h1>
+      <hr className="custom-hr-tag" />
       <div className="skillpage-container">
         {skills.map((skill, index) => (
           <SkillContainer skill={skill} index={index} />

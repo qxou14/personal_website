@@ -36,12 +36,18 @@ function getColor(tool) {
       return "#FF5722";
     case "css":
       return "#03A9F4";
-    case "sql":
+    case "postgresql":
       return "#FFC107";
+    case "mysql":
+      return "#00A6C2";
     case "django":
       return "#43A047";
     case "php":
       return "#D500F9";
+    case ".net":
+      return "#7C4DFF";
+    case "kafka":
+      return "#F05A28";
     default:
       return "gray";
   }

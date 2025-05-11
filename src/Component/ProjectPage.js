@@ -30,6 +30,7 @@ function ProjectPage({ content }) {
       <h1 id="project" className="section-header-name">
         Project
       </h1>
+      <hr className="custom-hr-tag" />
       <div className="project-list">
         {content.map((project) => (
           <Card className="project" key={project.id}>

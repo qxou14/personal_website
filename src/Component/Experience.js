@@ -7,6 +7,7 @@ function ExperiencePage({ content }) {
       <h1 id="experience" className="section-header-name">
         Work Experience
       </h1>
+      <hr className="custom-hr-tag" />
       {content.map((exp) => (
         <Card key={exp.id} className="exp-content">
           <Card.Body style={{ backgroundColor: "#f0f0f0" }}>
