@@ -48,6 +48,9 @@ function ProjectPage({ content }) {
                 onMouseEnter={() => handleHoverState(project.label, true)}
                 onMouseLeave={() => handleHoverState(project.label, false)}
               />
+              <div className="project-view-more">
+                <span>View More</span>
+              </div>
             </Col>
 
             <Card.Body>
