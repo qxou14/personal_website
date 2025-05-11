@@ -18,6 +18,7 @@ function App() {
         <SkillPage />
         <ExperiencePage content={Experience} />
         <ProjectPage content={Project} />
+        <hr className="custom-hr-tag" />
         <ContactPage />
       </div>
     </div>

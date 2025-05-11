@@ -9,7 +9,7 @@ function ExperiencePage({ content }) {
       </h1>
       {content.map((exp) => (
         <Card key={exp.id} className="exp-content">
-          <Card.Body>
+          <Card.Body style={{ backgroundColor: "#f0f0f0" }}>
             <Card.Title>{exp.name}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
               Position : {exp.position}

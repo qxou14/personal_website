@@ -1,4 +1,5 @@
 import React from "react";
+import SkillContainer from "./SkillContainer";
 
 const skills = [
   "Python",
@@ -31,9 +32,7 @@ function SkillPage() {
       </h1>
       <div className="skillpage-container">
         {skills.map((skill, index) => (
-          <span key={index} className="skill">
-            {skill}
-          </span>
+          <SkillContainer skill={skill} index={index} />
         ))}
       </div>
     </>
