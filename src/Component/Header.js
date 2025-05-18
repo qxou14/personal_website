@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import { Home } from "@mui/icons-material";
 
 export default function Header() {
   const clickHeader = (id) => {
@@ -9,7 +10,9 @@ export default function Header() {
   return (
     <div className="header">
       <Navbar>
-        <Navbar.Brand className="custom-nav-link">Home</Navbar.Brand>
+        <Navbar.Brand className="custom-nav-link">
+          <Home fontSize="large" />
+        </Navbar.Brand>
         <Nav className="header-label">
           <Nav.Link
             eventKey={1}

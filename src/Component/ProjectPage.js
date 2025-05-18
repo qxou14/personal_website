@@ -34,7 +34,11 @@ function ProjectPage({ content }) {
       <div className="project-list">
         {content.map((project) => (
           <Card className="project" key={project.id}>
-            <Col className="card-item">
+            <Col
+              className="card-item"
+              onMouseEnter={() => handleHoverState(project.label, true)}
+              onMouseLeave={() => handleHoverState(project.label, false)}
+            >
               <Card.Img
                 variant="top"
                 src={
@@ -45,26 +49,23 @@ function ProjectPage({ content }) {
                 className={
                   project.isMobile ? "gif-container-mobile" : "gif-container"
                 }
-                onMouseEnter={() => handleHoverState(project.label, true)}
-                onMouseLeave={() => handleHoverState(project.label, false)}
               />
               <div className="project-view-more">
-                <span>View More</span>
+                <Button
+                  variant="primary"
+                  onClick={() => {
+                    setShowModal(true);
+                    setProjectData(project);
+                  }}
+                >
+                  Show More
+                </Button>
               </div>
             </Col>
 
             <Card.Body>
               <Card.Title>{project.title}</Card.Title>
               <Card.Text>{project.description}</Card.Text>
-              <Button
-                variant="primary"
-                onClick={() => {
-                  setShowModal(true);
-                  setProjectData(project);
-                }}
-              >
-                Show More
-              </Button>
             </Card.Body>
           </Card>
         ))}
