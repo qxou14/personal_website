@@ -11,7 +11,7 @@ export default function Header() {
     <div className="header">
       <Navbar>
         <Navbar.Brand className="custom-nav-link">
-          <Home fontSize="large" />
+          <Home fontSize="large" onClick={() => clickHeader("introduction")} />
         </Navbar.Brand>
         <Nav className="header-label">
           <Nav.Link

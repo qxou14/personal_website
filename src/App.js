@@ -7,6 +7,7 @@ import Project from "./Content/ProjectContent";
 import ProjectPage from "./Component/ProjectPage";
 import SkillPage from "./Component/Skills";
 import ContactPage from "./Component/ContactMe";
+import Introduction from "./Component/Introduction";
 import "../src/Style/app.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div>
       <Header />
       <div className="content">
+        <Introduction />
         <EducationPage education={Education} extra={ExtraEducation} />
         <SkillPage />
         <ExperiencePage content={Experience} />
