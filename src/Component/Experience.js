@@ -10,28 +10,32 @@ function ExperiencePage({ content }) {
       <hr className="custom-hr-tag" />
       {content.map((exp) => (
         <Card key={exp.id} className="exp-content">
-          <Card.Body style={{ backgroundColor: "#f0f0f0" }}>
-            <Card.Title>{exp.name}</Card.Title>
+          <Card.Body>
+            <Card.Title>
+              <div className="custom-text">{exp.name}</div>
+            </Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
-              Position : {exp.position}
+              <div className="custom-text">Position : {exp.position}</div>
             </Card.Subtitle>
             <Card.Subtitle className="mb-2 text-muted">
-              Time Period : {exp.time}
+              <div className="custom-text"> Time Period : {exp.time} </div>
             </Card.Subtitle>
             <div>
-              Description:{" "}
-              <ul>
+              <div className="custom-text"> Description: </div>
+              <ul style={{ listStyle: "none" }}>
                 {exp.description.map((des) => (
                   <li key={des.key}>
                     {" "}
                     <Card.Text className="mb-2 text-muted">
-                      {des.content}
+                      <div className="custom-text">{des.content}</div>
                     </Card.Text>{" "}
                   </li>
                 ))}
               </ul>
             </div>
-            <Card.Text>Tools: {exp.tools}</Card.Text>
+            <Card.Text>
+              <div className="custom-text">Tools: {exp.tools}</div>
+            </Card.Text>
           </Card.Body>
         </Card>
       ))}

@@ -11,17 +11,23 @@ function EducationPage({ education, extra }) {
       <Row className="education-content">
         <Card key={education.key} className="education-card">
           <Card.Body>
-            <Card.Title>{education.name}</Card.Title>
+            <Card.Title>
+              <div className="custom-text">{education.name}</div>
+            </Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
-              Major : {education.major}
+              <div className="custom-text">Major : {education.major}</div>
             </Card.Subtitle>
             <Card.Subtitle className="mb-2 text-muted">
-              GPA: {education.gpa}
+              <div className="custom-text">GPA: {education.gpa}</div>
             </Card.Subtitle>
             <Card.Subtitle className="mb-2 text-muted">
-              Year: {education.year}
+              <div className="custom-text">Year: {education.year}</div>
             </Card.Subtitle>
-            <Card.Text>Relevant course : {education.relevant_course}</Card.Text>
+            <Card.Text>
+              <div className="custom-text">
+                Relevant course : {education.relevant_course}
+              </div>
+            </Card.Text>
           </Card.Body>
         </Card>
       </Row>
@@ -29,12 +35,14 @@ function EducationPage({ education, extra }) {
       <Row className="education-content">
         <Card key={extra.key} className="education-card">
           <Card.Body>
-            <Card.Title>{extra.name}</Card.Title>
+            <Card.Title>
+              <div className="custom-text">{extra.name} </div>
+            </Card.Title>
             <div>
-              Description:{" "}
+              <div className="custom-text"> Description: </div>
               {extra.description.map((des) => (
                 <Card.Text className="mb-2 text-muted" key={des.key}>
-                  {des.content}
+                  <div className="custom-text">{des.content}</div>
                 </Card.Text>
               ))}
             </div>

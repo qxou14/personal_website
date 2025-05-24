@@ -19,9 +19,9 @@ function App() {
         <BackgroundEffect />
         <div className="content">
           <Introduction />
-          <EducationPage education={Education} extra={ExtraEducation} />
-          <SkillPage />
           <ExperiencePage content={Experience} />
+          <SkillPage />
+          <EducationPage education={Education} extra={ExtraEducation} />
           <ProjectPage content={Project} />
           <hr className="custom-hr-tag" />
           <ContactPage />

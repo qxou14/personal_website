@@ -17,7 +17,7 @@
 .project {
   margin-bottom: 12px;
   box-shadow: 2px 2px 8px 2px gray;
-  background-color: #f0f0f0 !important;
+  background-color: #222 !important;
   height: 400px !important;
 }
 
@@ -43,6 +43,7 @@
   transition: transform 0.3s ease;
   margin-bottom: 20px;
   box-shadow: 2px 2px 8px 2px gray;
+  background-color: #222 !important;
 }
 
 .exp-content:hover {
@@ -96,9 +97,13 @@
 
 .education-card {
   box-shadow: 2px 2px 8px 2px gray;
-  background-color: #f0f0f0 !important;
+  background-color: #222 !important;
 }
 
+.custom-text {
+  color: #bbbbbb;
+  font-family: sans-serif;
+}
 .header {
   padding-left: 16px;
   background-color: black;
@@ -121,7 +126,7 @@
   padding-right: 5%;
   padding-top: 60px;
   padding-bottom: 64px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .background-container {
@@ -134,7 +139,7 @@
 }
 
 .custom-nav-link {
-  color: white !important;
+  color: #bbbbbb !important;
   cursor: pointer;
 }
 
@@ -169,7 +174,7 @@
   display: flex;
   justify-content: center;
   scroll-margin-top: 60px;
-  color: white;
+  color: #bbbbbb;
 }
 
 .icon a {
@@ -195,7 +200,7 @@
 }
 
 .custom-hr-tag {
-  border: 1px solid #f0f0f0;
+  border: 1px solid #bbbbbb;
   opacity: 1;
 }
 
@@ -217,11 +222,13 @@
 
 .name {
   font-size: 4em;
-  color: #f0f0f0;
+  color: #bbbbbb;
+  font-family: sans-serif;
 }
 
 .introduction-content {
-  color: #f0f0f0;
+  color: #bbbbbb;
+  font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,6 +242,26 @@
   width: 100vw;
   height: 100vh;
   z-index: 0;
+}
+
+.stars {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: twinkle 2s infinite ease-in-out;
 }
 
 .meteor {
@@ -275,5 +302,15 @@
   100% {
     transform: translate(600px, 600px) rotate(-45deg);
     opacity: 0;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
   }
 }
