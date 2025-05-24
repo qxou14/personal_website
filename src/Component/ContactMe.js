@@ -14,7 +14,7 @@ function ContactPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GitHub fontSize="lg" />
+            <GitHub className="custom-icon" style={{ fontSize: "35px" }} />
           </a>
         </div>
         <div className="icon">
@@ -23,7 +23,7 @@ function ContactPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedIn fontSize="lg" />
+            <LinkedIn className="custom-icon" style={{ fontSize: "40px" }} />
           </a>
         </div>
       </div>
@@ -32,8 +32,10 @@ function ContactPage() {
           href="mailto:qxou14@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="a-link"
         >
-          <Email /> qxou14@gmail.com
+          <Email className="custom-icon" style={{ fontSize: "35px" }} />{" "}
+          qxou14@gmail.com
         </a>
       </div>
     </>
