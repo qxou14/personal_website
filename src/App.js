@@ -9,19 +9,23 @@ import SkillPage from "./Component/Skills";
 import ContactPage from "./Component/ContactMe";
 import Introduction from "./Component/Introduction";
 import "../src/Style/app.css";
+import BackgroundEffect from "./Component/BackgroundEffect";
 
 function App() {
   return (
     <div>
       <Header />
-      <div className="content">
-        <Introduction />
-        <EducationPage education={Education} extra={ExtraEducation} />
-        <SkillPage />
-        <ExperiencePage content={Experience} />
-        <ProjectPage content={Project} />
-        <hr className="custom-hr-tag" />
-        <ContactPage />
+      <div className="background-container">
+        <BackgroundEffect />
+        <div className="content">
+          <Introduction />
+          <EducationPage education={Education} extra={ExtraEducation} />
+          <SkillPage />
+          <ExperiencePage content={Experience} />
+          <ProjectPage content={Project} />
+          <hr className="custom-hr-tag" />
+          <ContactPage />
+        </div>
       </div>
     </div>
   );

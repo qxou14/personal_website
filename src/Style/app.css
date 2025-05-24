@@ -121,6 +121,11 @@
   padding-right: 5%;
   padding-top: 60px;
   padding-bottom: 64px;
+  z-index: 1;
+}
+
+.background-container {
+  position: relative;
   background-color: black;
 }
 
@@ -208,4 +213,55 @@
   padding-right: 5%;
   padding-top: 60px;
   padding-bottom: 64px;
+}
+
+.night-sky {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.meteor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100px;
+  background: linear-gradient(-45deg, white, transparent);
+  transform: rotate(-45deg);
+  animation: fall 4s linear infinite;
+  opacity: 0.6;
+}
+
+.meteor.star1 {
+  animation-delay: 1s;
+  left: 20%;
+  opacity: 0;
+}
+
+.meteor.star2 {
+  animation-delay: 2s;
+  left: 40%;
+  opacity: 0;
+}
+
+.meteor.star3 {
+  animation-delay: 2s;
+  left: 60%;
+  opacity: 0;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(0, 0) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(600px, 600px) rotate(-45deg);
+    opacity: 0;
+  }
 }
