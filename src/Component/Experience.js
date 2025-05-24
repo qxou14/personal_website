@@ -22,7 +22,7 @@ function ExperiencePage({ content }) {
             </Card.Subtitle>
             <div>
               <div className="custom-text"> Description: </div>
-              <ul style={{ listStyle: "none" }}>
+              <ul style={{ color: "#bbbbbb" }}>
                 {exp.description.map((des) => (
                   <li key={des.key}>
                     {" "}
